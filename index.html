@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horário de Professores/Laboratórios/Turmas CINFO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+   
+    <title>Horário de Professores CINFO</title>
+  </head>
+
+  <body class="cor-lilas-bg">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: #7952b3"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="cinfo_logo.png" alt="CINFO" height="30"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contato.html">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www2.ifal.edu.br/campus/maceio/ensino/horario-dos-docentes-2022.2"
+                >Horários de Aula Geral (Direção de Ensino)</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www2.ifal.edu.br/campus/maceio"
+                >IFAL Maceió</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+          <div class="container">
+              <h1 class="my-4">Horário de Professores/Labs/Turma CINFO 2024-1</h1>
+
+            <div class="form-group">
+              <label for="filtroProfessor">Filtrar por Professor:</label>
+              <select
+                id="filtroProfessor"
+                class="form-control"
+                onchange="filtrarPorProfessor()"
+              >
+                <option value="">Todos</option>
+                <option value="Anderson Rodrigues Gomes">
+                  Anderson Rodrigues Gomes
+                </option>
+                <option value="Augusto Melo - IFAL">Augusto Melo - IFAL</option>
+                <option value="BRENO FELIX">BRENO FELIX</option>
+                <option value="BRUNO ROCHA">BRUNO ROCHA</option>
+                <option value="Edison Camilo de Moraes Junior">
+                  Edison Camilo de Moraes Junior
+                </option>
+                <option value="Eduardo Cardoso Moraes">Eduardo Cardoso Moraes</option>
+                <option value="Elvys Soares">Elvys Soares</option>
+                <option value="Eunice Palmeira / PRPPI - IFAL">
+                  Eunice Palmeira / PRPPI - IFAL
+                </option>
+                <option value="Fabrisia Ferreira de Araujo">
+                  Fabrisia Ferreira de Araujo
+                </option>
+                <option value="Flavio Mota Medeiros">Flavio Mota Medeiros</option>
+                <option value="Ivo Calado">Ivo Calado</option>
+                <option value="Jailton Cardoso da Cruz">
+                  Jailton Cardoso da Cruz
+                </option>
+                <option value="Kenji Kamei">Kenji Kamei</option>
+                <option value="Leo Fernandes">Leo Fernandes</option>
+                <option value="Leonardo Medeiros">Leonardo Medeiros</option>
+                <option value="Luiz Frederico Lopes de Oliveira">
+                  Luiz Frederico Lopes de Oliveira
+                </option>
+                <option value="Marcelo Queiroz de Assis Oliveira">
+                  Marcelo Queiroz de Assis Oliveira
+                </option>
+                <option value="Monica Ximenes">Monica Ximenes</option>
+                <option value="Ricardo Nunes">Ricardo Nunes</option>
+                <option value="SIMPLICIO NETO">SIMPLICIO NETO</option>
+                <option value="SUBSTITUTO DEV">SUBSTITUTO DEV</option>
+                <option value="Tarcio Rodrigues Bezerra">
+                  Tarcio Rodrigues Bezerra
+                </option>
+                <option value="Wladia Bessa da Cruz">Wladia Bessa da Cruz</option>
+              </select>
+            </div>
+
+              <div class="row">
+                  <div class="col-md-4 mb-3">
+                      <label for="filtroDia" class="form-label">Filtrar por Dia:</label>
+                      <select id="filtroDia" class="form-select" onchange="filtrarPorDia()">
+                          <option value="">Todos</option>
+                          <option value="segunda-feira">Segunda-feira</option>
+                          <option value="terca-feira">Terça-feira</option>
+                          <option value="quarta-feira">Quarta-feira</option>
+                          <option value="quinta-feira">Quinta-feira</option>
+                          <option value="sexta-feira">Sexta-feira</option>
+                      </select>
+                  </div>
+
+                  <div class="col-md-4 mb-3">
+                      <label for="filtroLaboratorio" class="form-label">Filtrar por Laboratório:</label>
+                      <select id="filtroLaboratorio" class="form-select" onchange="filtrarPorLab()">
+                          <option value="">Todos</option>
+                          <option value="L102">L102</option>
+                          <option value="L103">L103</option>
+                          <option value="L104">L104</option>
+                          <option value="S105">S105</option>
+                          <option value="L107">L107</option>
+                          <option value="L108">L108</option>
+                          <option value="L109">L109</option>
+                          <option value="L110">L110</option>
+                          <option value="A111">A111</option>
+                          <option value="L112">L112</option>
+                          <option value="ST02">ST02</option>
+                          <option value="LT03">LT03</option>
+                          <option value="LabApp">LabApp</option>
+                          <option value="CADs">CADs</option>
+                          <option value="Lab Turismo">Lab Turismo</option>
+                      </select>
+                  </div>
+
+                  <div class="col-md-4 mb-3">
+                      <label for="filtroTurma" class="form-label">Filtrar por Turma:</label>
+                      <select id="filtroTurma" class="form-select" onchange="filtrarPorTurma()">
+                          <option value="">Todos</option>
+                          <option value="911A">911A</option>
+                          <option value="912A">912A</option>
+                          <option value="913A">913A</option>
+                          <option value="921A">921A</option>
+                          <option value="922A">922A</option>
+                          <option value="923A">923A</option>
+                          <option value="BSI 1P">BSI 1P</option>
+                          <option value="BSI 2P">BSI 2P</option>
+                          <option value="BSI 3P">BSI 3P</option>
+                          <option value="BSI 4P">BSI 4P</option>
+                          <option value="BSI 5P">BSI 5P</option>
+                          <option value="BSI 6P">BSI 6P</option>
+                          <option value="BSI 7P">BSI 7P</option>
+                          <option value="BSI 8P">BSI 8P</option>
+                          <option value="ELETIVA">ELETIVA</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                      </select>
+                  </div>
+              </div>
+
+              <div class="table-responsive">
+                  <table class="table table-bordered">
+                      <thead>
+                          <tr>
+                              <th scope="col"></th>
+                              <th scope="col">Segunda-feira</th>
+                              <th scope="col">Terça-feira</th>
+                              <th scope="col">Quarta-feira</th>
+                              <th scope="col">Quinta-feira</th>
+                              <th scope="col">Sexta-feira</th>
+                          </tr>
+                      </thead>
+                      <tbody id="horarioTableBody">
+                          <!-- A tabela será preenchida dinamicamente com JavaScript -->
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+
+          <script src="script.js"></script>
+      </body>
+
+      </html>

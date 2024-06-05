@@ -1,0 +1,117 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.filters-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  background-color: #7952b3;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+.navbar-brand:hover,
+.navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.card {
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+}
+
+.cor-lilas-bg {
+    background-color: #f0f2fa !important;
+}
+
+.cor-azul {
+    color: #7952b3!important;
+}
+
+.cor-azul-bg {
+    background-color: #7952b3!important;
+}
+
+.table {
+  border-radius: 15px;
+}
+
+
+.table td {
+  border: solid 1px #7952b3;
+  background-color: white;
+  padding: 5px;
+}
+
+.table th {
+  background-color: #7952b3;
+  color: #ffffff;
+}
+
+.zebrado tbody tr:nth-child(even) {
+  background-color: #e9ecef;
+}
+
+.zebrado tbody tr:hover {
+  background-color: #c8d1f4;
+}
+
+.zebrado tbody tr td.highlight {
+  background-color: #f0f2fa;
+}
+.matutino {
+  background-color: #d1e7dd; margin-top: 10px;
+}
+
+.vespertino {
+  background-color: #fff3cd; margin-top: 10px;
+}
+
+.noturno {
+  background-color: #f8d7da; margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .table thead {
+    display: none;
+  }
+
+  .table, .table tbody, .table tr, .table td {
+    display: block;
+    width: 100%;
+  }
+
+  .table tr {
+    margin-bottom: 15px;
+  }
+
+  .table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
+}
